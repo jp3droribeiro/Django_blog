@@ -1,0 +1,86 @@
+/* Variáveis para o tema dark */
+:root {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --header-bg-color: #1f1f1f;
+    --post-bg-color: #1e1e1e;
+    --border-color: #333;
+    --link-color: #f0a500;
+    --link-hover-color: #ffa726;
+    --footer-bg-color: #1a1a1a;
+}
+
+/* Estilo do corpo */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: var(--header-bg-color);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+header h1 a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 2em;
+}
+
+header h1 a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Estilo para os posts */
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post {
+    background-color: var(--post-bg-color);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.post .date {
+    font-size: 0.9em;
+    color: #a0a0a0;
+    margin-bottom: 10px;
+}
+
+.post h2 a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.post h2 a:hover {
+    color: var(--link-hover-color);
+}
+
+.post p {
+    line-height: 1.6;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: var(--footer-bg-color);
+    text-align: center;
+    padding: 15px;
+    color: #777;
+    font-size: 0.9em;
+    border-top: 1px solid var(--border-color);
+}
